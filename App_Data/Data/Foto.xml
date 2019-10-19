@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-16"?>
+<List_Foto>
+  <Items>
+    <Foto>
+      <ID>4</ID>
+      <Desk>Грузовик</Desk>
+    </Foto>
+    <Foto>
+      <ID>5</ID>
+      <Desk>машинка</Desk>
+    </Foto>
+    <Foto>
+      <ID>6</ID>
+      <Desk />
+    </Foto>
+    <Foto>
+      <ID>7</ID>
+      <Desk>Кукла Барби</Desk>
+    </Foto>
+  </Items>
+</List_Foto>

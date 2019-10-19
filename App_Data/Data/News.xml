@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-16"?>
+<List_News>
+  <Items>
+    <NewsItem ID="11" Date="2010-12-24T15:15:49">
+      <Title>Новогодняя акция</Title>
+      <Announce>СКИДКИ!!!!!</Announce>
+      <Text>&lt;br /&gt;</Text>
+      <PageTitle />
+      <Section>1</Section>
+    </NewsItem>
+    <NewsItem ID="12" Date="2010-12-24T15:15:49">
+      <Title>Новогоднее предложение</Title>
+      <Announce />
+      <Text>&lt;br /&gt;</Text>
+      <PageTitle />
+      <Section>1</Section>
+    </NewsItem>
+    <NewsItem ID="14" Date="2010-12-24T15:15:49">
+      <Title>Новогоднее поздравление!</Title>
+      <Announce>Дорогие наши партнеры, примите самые искренние поздравления с наступающим Новым годом и Рождеством!</Announce>
+      <Text>Пусть наступающий 2011 год принесет много приятных событий и счастливых моментов. Пусть появятся новые перспективы и воплотятся в жизнь поставленные задачи! Желаем крепкого здоровья, удачи и любви Вам и Вашим близким! Хорошего настроения и исполнения самых заветных желаний в канун Нового года и Рождества!&amp;nbsp;</Text>
+      <PageTitle />
+      <Section>1</Section>
+    </NewsItem>
+  </Items>
+</List_News>

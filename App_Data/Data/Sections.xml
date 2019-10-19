@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Sections>
+  <Items>
+    <Section>
+      <ID>1</ID>
+      <Caption>Куклы</Caption>
+    </Section>
+    <Section>
+      <ID>2</ID>
+      <Caption>Машинки</Caption>
+    </Section>
+    <Section>
+      <ID>3</ID>
+      <Caption>Мягкие игрушки</Caption>
+    </Section>
+    <Section>
+      <ID>4</ID>
+      <Caption>Плюшевые мишки</Caption>
+    </Section>
+    <Section>
+      <ID>5</ID>
+      <Caption>Канцтовары</Caption>
+    </Section>
+  </Items>
+</Sections>

@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterAdmin.master.cs" Inherits="admin_MasterAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>Система управления содержимым</title>  
+    <link rel="stylesheet" type="text/css" href="StyleAdm.css">  
+
+    <script type="text/javascript" src="../js/jquery-1.4.2.min.js" ></script>
+
+<script type="text/javascript" src="../js/index.js" ></script>
+
+<script type="text/javascript" src="../js/jquery.tinycarousel.min.js" ></script>
+</head>
+<body>
+
+
+    <form id="form1" class="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+
+    <table cellspacing="0" cellpadding="0" border="0" class="table">
+        <tr valign="top">
+            
+            <td style="background-color:#2d374c; width:200px; color: White;" align="center">                 
+               <br />
+               <a href="page.aspx?name=main" style="color:White;">Страницы</a><br /><hr>
+               <a href="news.aspx" style="color:White;">Новости</a><br /><hr>
+                    <a href="catalog.aspx" style="color:White;">Каталог</a><br /><hr>
+                <asp:LinkButton ID="exit" CssClass="lb" onclick="exit_Click" runat="server">Выход</asp:LinkButton>
+                    
+            </td>
+
+             <td style="text-align:left; padding-left: 10px;">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+        
+    </form>
+    
+</body>
+</html>

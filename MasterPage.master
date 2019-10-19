@@ -1,0 +1,253 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Лимпопо</title>
+    
+<link type="text/css" rel="stylesheet" href="style.css" />    
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    
+  <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />    
+    
+<script type="text/javascript">
+
+    $(document).ready(function () {
+    
+    $("a[rel^='lightbox']").lightBox();
+    
+    });
+
+</script>    
+    
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+<table background="images/bg.gif" border="0" cellpadding="0" cellspacing="0" style="height: 100%;" width="100%">
+<form id="form1" runat="server">
+	<tr>
+		<td background="images/image_03.jpg" style="text-align: center; height: 150px; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000">
+		<img src="images/logo.png" /></td>
+	</tr>
+	<tr>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000;" valign="top">
+		<div align="center">
+			<table border="0" cellpadding="0" cellspacing="0" width="98%">
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+		<td width="19%" valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td background="images/image_07.jpg" width="81%" style="border-left: 1px solid #000000;">
+				<p align="center"><b><font face="Tahoma" size="2">Главное меню</font></b></td>
+				<td background="images/image_07.jpg"  valign="top" width="19%">
+				<font face="Tahoma" size="1">
+				<img border="0" src="images/image_09.jpg" width="30" height="32" align="right" hspace="0"></font></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="background:#ffe7ea; padding-left: 10px; border-left: 1px solid #000000; border-right: 1px solid #000000">
+                    
+                    <p class="menu_items"><a href = "news.aspx">Новости</a></p>
+					<p class="menu_items"><a href = "content.aspx?id=1">О компании</a></p>
+					<p class="menu_items"><a href = "content.aspx?id=2">Как нас найти</a></p>
+					<p class="menu_items"><a href = "content.aspx?id=3">Наши скидки</a></p>
+					<p class="menu_items"><a href = "content.aspx?id=4">Прайс-лист</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td background="images/image_15.jpg" colspan="2" style="border-left: 1px solid #000000; border-right: 1px solid #000000">
+				<font face="Tahoma" size="1">
+				<img border="0" src="images/image_15.jpg" width="1" height="9"></font></td>
+			</tr>
+		</table>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td background="images/image_07.jpg" width="81%" style="border-left: 1px solid #000000;">
+				<p align="center"><b><font face="Tahoma" size="2">Каталог</font></b></td>
+				<td background="images/image_07.jpg" valign="top" width="19%">
+				<font face="Tahoma" size="1">
+				<img border="0" src="images/image_09.jpg" width="30" height="32" align="right" hspace="0"></font></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="background:#ffe7ea; border-left: 1px solid #000000; border-right: 1px solid #000000" >
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td style="margin-left: 10; padding-left: 10px;">
+                            <asp:PlaceHolder ID="phCat" runat="server"></asp:PlaceHolder>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td background="images/image_15.jpg" colspan="2" style="border-left: 1px solid #000000; border-right: 1px solid #000000">
+				<font face="Tahoma" size="1">
+				<img border="0" src="images/image_15.jpg" width="1" height="9"></font></td>
+			</tr>
+		</table>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td background="images/image_07.jpg" width="81%" style="border-left: 1px solid #000000;">
+				<p align="center"><b><font face="Tahoma" size="2">Статистика посещений</font></b></td>
+				<td background="images/image_07.jpg" valign="top" width="19%">
+				<font face="Tahoma" size="1">
+				<img border="0" src="images/image_09.jpg" width="30" height="32" align="right" hspace="0"></font></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="height: 50px; background:#ffe7ea; border-left: 1px solid #000000; border-right: 1px solid #000000" >
+
+				</td>
+			</tr>
+			<tr>
+				<td background="images/image_15.jpg" colspan="2" style="border-left: 1px solid #000000; border-right: 1px solid #000000">
+				<font face="Tahoma" size="1">
+				<img border="0" src="images/image_15.jpg" width="1" height="9"></font></td>
+			</tr>
+		</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+		<td width="1%" rowspan="2">&nbsp;</td>
+		<td width="59%" class = "td_content" rowspan="2" valign="top">
+		    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+			    <tr>
+				    <td background="images/image_07.jpg" width="81%" style="border-left: 1px solid #000000;">
+				    <p align="center"><b><font face="Tahoma" size="2">Содержимое</font></b></td>
+				    <td background="images/image_07.jpg" valign="top" width="19%">
+				    <font face="Tahoma" size="1">
+				    <img border="0" src="images/image_09.jpg" width="30" height="32" align="right" hspace="0"></font></td>
+			    </tr>
+			    <tr>
+				    <td colspan="2" style="background:#ffe7ea; padding: 20px; border-left: 1px solid #000000; border-right: 1px solid #000000" >
+		    <div id = "content">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                
+                </asp:ContentPlaceHolder>		        
+		    </div>    
+    
+    </td>
+			    </tr>
+			    <tr>
+				    <td background="images/image_15.jpg" colspan="2" style="border-left: 1px solid #000000; border-right: 1px solid #000000">
+				    <font face="Tahoma" size="1">
+				    <img border="0" src="images/image_15.jpg" width="1" height="9"></font></td>
+			    </tr>
+		    </table>
+		    
+
+		    
+		</td>
+		<td width="1%" rowspan="2">&nbsp;</td>
+		<td width="19%" valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td background="images/image_07.jpg" width="81%" style="border-left: 1px solid #000000;">
+				<p align="center"><b><font face="Tahoma" size="2">Недавно добавленные товары</font></b></td>
+				<td background="images/image_07.jpg" valign="top" width="19%">
+				<font face="Tahoma" size="1">
+				<img border="0" src="images/image_09.jpg" width="30" height="32" align="right" hspace="0"></font></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="background:#ffe7ea; text-align: center; border-left: 1px solid #000000; border-right: 1px solid #000000"  valign="middle">
+                    <asp:PlaceHolder ID="phRecent" runat="server"></asp:PlaceHolder>
+				</td>
+			</tr>
+			<tr>
+				<td background="images/image_15.jpg" colspan="2" style="border-left: 1px solid #000000; border-right: 1px solid #000000">
+				<font face="Tahoma" size="1">
+				<img border="0" src="images/image_15.jpg" width="1" height="9"></font></td>
+			</tr>
+		</table>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td background="images/image_07.jpg" width="81%" style="border-left: 1px solid #000000;">
+				<p align="center"><b><font face="Tahoma" size="2">Новости</font></b></td>
+				<td background="images/image_07.jpg" valign="top" width="19%">
+				<font face="Tahoma" size="1">
+				<img border="0" src="images/image_09.jpg" width="30" height="32" align="right" hspace="0"></font></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="background:#ffe7ea; padding: 15px; border-left: 1px solid #000000; border-right: 1px solid #000000" >
+                    <asp:PlaceHolder ID="phNews" runat="server"></asp:PlaceHolder>
+				</td>
+			</tr>
+			<tr>
+				<td background="images/image_15.jpg" colspan="2" style="border-left: 1px solid #000000; border-right: 1px solid #000000">
+				<font face="Tahoma" size="1">
+				<img border="0" src="images/image_15.jpg" width="1" height="9"></font></td>
+			</tr>
+		</table>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		</td>
+	</tr>
+	</form>
+	</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" background="bg.gif">
+	<tr>
+				<td background="images/image_07.jpg" width="81%" style="border-left: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000">
+				<p align="center"><font face="Tahoma" size="1">Copyright </font>
+				<font size="1" face="Times New Roman">©</font><font face="Tahoma" size="1">&nbsp; 
+				2005+ www.radialdesigns.co.uk</font></td>
+				</tr>
+</table>
+
+    
+
+
+
+    
+</body>
+</html>

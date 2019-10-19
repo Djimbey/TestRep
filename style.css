@@ -1,0 +1,143 @@
+﻿	body, html {
+	margin:0px;
+	padding:0px;
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	background: #fff;
+	}
+	
+	#content{
+		width: 100%;
+		text-align: justify;
+	}
+	
+	a.menu_items{
+		color: black;
+		text-decoration: none;
+	}	
+	a.menu_items:hover{
+		color: black;
+		text-decoration: underline;
+	}		
+	
+	.menu_items a{
+		color: black;
+		text-decoration: none;
+		font-size: 120%;
+		font-weight: bold;
+	}	
+	.menu_items a:hover{
+		color: black;
+		text-decoration: underline;
+		font-size: 120%;
+		font-weight: bold;
+	}		
+	
+div.item{
+	float:left;
+	width:201px;
+	border:none;
+	margin:10px 10px 0 0;
+	text-align:center;
+	}
+	
+div.item div.t{
+	background:none;
+	text-align:center;
+	color:#333;
+	margin: 0 auto;
+	width: 100%;
+	}
+	
+div.item div {
+    background: url("images/n000.jpg") no-repeat scroll left center #083824;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 22px;
+    line-height: 22px;
+    padding-right: 5px;
+    text-align: right;
+    width: 171px;
+    margin: 0 auto;
+}			
+
+h1{
+	font-size: 130%;
+}
+
+.RNews{
+	margin-bottom: 15px;
+}
+.RNews a{
+	color: #631b17;
+	text-decoration: none;
+}
+.RNews a:hover{
+	color: #631b17;
+	text-decoration: underline;
+}
+
+.allnews{
+	color: #631b17;
+	font-weight:bold;
+	text-decoration: underline;
+}
+.NewsTitle{
+	color: #631b17;
+	font-weight:bold;
+	text-decoration: underline;
+}
+
+
+
+	/*Page*/
+#paginator{
+	width: 100%;
+	text-align:center;
+	height: 15px;
+	margin-bottom: 15px;
+}
+#paginator_cont{
+display: table; 
+width:auto; 
+margin: 0 auto;
+}
+* html #paginator span {/*хак для IE6, который не понимает display: table*/
+display: inline-block;
+}
+*:first-child+html #paginator span {/*хак для IE7, который не понимает display: table */
+display: inline-block;
+}
+#paginator a{
+	text-decoration: none;
+	color: #144D29;	
+}
+.page_prev{
+	height: 15px;
+	text-align: center;
+	vertical-align:middle;
+	line-height:15px;
+	float:left;
+	margin-right:10px;
+}
+
+.page{
+	height: 15px;
+	width: 17px;
+	text-align: center;
+	vertical-align:middle;
+	line-height:15px;
+	float:left;
+	margin-right:10px;
+}
+.page_act{
+	height: 15px;
+	width: 17px;
+	text-align: center;
+	vertical-align:middle;
+	line-height:15px;
+	background: #880105;
+	float:left;
+	margin-right:10px;
+}
